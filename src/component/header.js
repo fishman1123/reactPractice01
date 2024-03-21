@@ -6,9 +6,9 @@ export default function Header() {
             <Link to="/">오픽 영단어(최고급)</Link>
         </h1>
         <div className="menu">
-            <a href="#x" className="link">
+            <Link to="/create_word" className="link">
                 단어추가
-            </a>
+            </Link>
             <a href="#x" className="link">
                 Day 추가
             </a>
