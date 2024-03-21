@@ -171,6 +171,13 @@
       "eng": "mother",
       "kor": "마덜",
       "isDone": false
+    },
+    {
+      "id": "d7a7",
+      "day": "11",
+      "eng": "father",
+      "kor": "파떨",
+      "isDone": false
     }
   ]
 }
