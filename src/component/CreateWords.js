@@ -1,9 +1,10 @@
 import useFetch from "../hooks/useFetch";
 import {useRef} from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateWords() {
     const days = useFetch('http://localhost:3001/days');
-
+    const history = useNavigate();
     function onSubmit(e) {
         e.preventDefault();
 
@@ -25,6 +26,7 @@ export default function CreateWords() {
         }).then(res => {
             if (res.ok) {
                 alert("단어 생성이 완료 되었습니다")
+                history(`/day/${dayRef.current.value}`)
             }
         })
     }
